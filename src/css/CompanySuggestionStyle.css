@@ -1,0 +1,318 @@
+:root {
+  --primary-btn: #b1ff8f;
+  --body-bg: #384740;
+  --div-bg: #606d67;
+  --text-white: #ffffff;
+  --hover-bg: #4a5750;
+}
+
+.company-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--div-bg);
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.company-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Column Headings */
+.column-headings {
+  display: flex;
+  
+  justify-content: space-between;
+  padding: 0 1rem 1rem 1rem;
+  border-bottom: 2px solid var(--primary-btn);
+  margin-bottom: 1.5rem;
+}
+
+.company-heading,
+.reviews-heading,
+.services-heading {
+  color: var(--primary-btn);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  flex: 1;
+  text-align: center;
+}
+
+/* Company Row Layout */
+.company-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  background: var(--div-bg);
+  border-radius: 10px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  gap: 1rem;
+}
+
+.company-container.visible .company-row {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Columns */
+.company-info {
+  flex: 0 1 30%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.trustpilot-button {
+  flex: 0 1 25%;
+  min-width: 0;
+  text-align: center;
+}
+
+.services-description {
+  flex: 0 1 30%;
+  min-width: 0;
+  padding: 0 1rem;
+
+  
+}
+
+.services-description p {
+  
+  color: var(--text-white);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+}
+/* Hover Effects */
+.company-row::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(177, 255, 143, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.company-row:hover::before {
+  left: 100%;
+}
+
+.company-row:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(177, 255, 143, 0.1);
+}
+
+/* Logo Styling */
+.company-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  object-fit: contain;
+  border: 2px solid var(--primary-btn);
+  transition: transform 0.3s ease;
+  background: white;
+}
+
+.company-logo:hover {
+  transform: rotate(5deg) scale(1.05);
+}
+
+/* Link Styling */
+.company-link {
+  color: var(--text-white);
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+}
+
+.company-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-btn);
+  transition: width 0.3s ease;
+}
+
+.company-link:hover::after {
+  width: 100%;
+}
+
+/* Button Styling */
+.trustpilot-button {
+  background: var(--primary-btn);
+  color: var(--body-bg);
+  padding: 12px 0px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.trustpilot-button:hover {
+  background: transparent;
+  color: var(--primary-btn);
+  border-color: var(--primary-btn);
+  box-shadow: 0 4px 15px rgba(177, 255, 143, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .company-container {
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
+
+  .company-heading,
+  .reviews-heading,
+  .services-heading {
+    font-size: 1rem;
+  }
+
+  .company-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .company-link {
+    font-size: 1rem;
+  }
+
+  .services-description p {
+    font-size: 0.9rem;
+    
+  }
+
+  .trustpilot-button {
+    padding: 10px 0px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .company-container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .company-heading,
+  .reviews-heading,
+  .services-heading {
+    font-size: 0.9rem;
+  }
+
+  .company-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .company-link {
+    font-size: 0.9rem;
+  }
+
+  .services-description p {
+    font-size: 0.7rem;
+    padding: 0 0 ;
+  }
+
+  .trustpilot-button {
+    padding: 8px 2px;
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 580px){
+  .company-container {
+   
+    margin: 0;
+}
+}
+@media (max-width: 480px) {
+  .company-container {
+    padding: 0.5rem;
+    margin: 0 0;
+  }
+
+  .column-headings {
+    padding: 10px 0.5rem 0.5rem;
+  }
+
+  .company-heading,
+  .reviews-heading,
+  .services-heading {
+    font-size: 0.8rem;
+  }
+.company-row{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+  .company-logo {
+    width: 32px;
+    height: 32px;
+  }
+  .company-info {
+    gap: 0.5rem;
+  }
+  .company-link {
+    font-size: 0.8rem;
+  }
+
+  .services-description p {
+    font-size: 0.65rem;
+}
+  .trustpilot-button {
+    padding: 6px 12px;
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 325px) {
+  .services-description p {
+    font-size: 0.5rem;
+}
+.services-description {
+  flex: 0 1 34%;}
+
+  .trustpilot-button {
+    
+    font-size: 0.5rem;
+}
+.company-link {
+  font-size: 0.6rem;
+}
+.company-logo {
+  width: 30px;
+  height: 30px;
+}
+.company-info {
+  gap: 0.5rem;
+}
+.company-heading, .reviews-heading, .services-heading {
+  font-size: 0.5rem;
+}
+
+}

@@ -1,0 +1,39 @@
+*body {
+    width: 100%;
+}
+
+.navlogo {
+    width: 120px;
+    height: 95px;
+
+    img {
+        object-fit: cover;
+        height: 135px;
+    }
+}
+
+.resultbtn {
+    width: '25%';
+}
+
+
+@media (max-width: 325px) {
+    .organizationButton {
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .btn {
+
+        padding: 5px;
+        width: 40%;
+      
+        margin: 0;
+        font-size: 12px;
+    }
+
+    
+
+}

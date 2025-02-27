@@ -1,0 +1,176 @@
+/* Main container - Default styling for large screens */
+
+.about-container {
+   
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: #384740;
+
+
+    border-radius: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 1924px;
+    /* Ensures content stays within the screen width of 1924px */
+    margin: auto;
+    /* Centers the content */
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* Image styling*/
+.about-image {
+  
+    width: 50%;
+    margin-top: 0%;
+    margin-right: 3%;
+    margin-left: auto;
+    background-color: #606d67;
+    padding: 20px;
+    border-radius: 10px;
+    /* height: 470px; */
+    max-width: 700px;
+    min-width: 300px;
+
+    img {
+        width: 100%;
+    }
+}
+
+/* Text content styling */
+.about-text {
+    margin-bottom: 1%;
+    margin-top: -13%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    /* margin: auto; */
+    background-color: #606d67bf;
+    padding: 20px;
+    border-radius: 10px;
+    width: 55%;
+    max-width: 800px;
+    min-width: 466px;
+
+
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #B1FF8F;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #d6dadb;
+}
+
+/* Responsive design starting from screen width of 1924px */
+@media (max-width: 2500px) {
+    .about-text {
+
+        right: 24%;
+    }
+
+}
+
+@media (max-width: 1440px) {
+
+
+    .about-text p {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 1270px) {
+    .about-text {
+        padding: 10px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about-text {
+        padding: 10px;
+    }
+
+    .about-text p {
+        font-size: 12px;
+    }
+
+    
+}
+
+@media (max-width: 900px) {
+    .about-text {
+        padding: 10px;
+    }
+
+    .about-text p {
+        font-size: 11px;
+    }
+
+    .about-image {
+        width: 55%;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .about-text {
+        min-width: 350px;
+
+
+    }
+
+    .about-image {
+        display: none;
+    }
+
+    .about-text {
+        position: relative;
+        top: unset;
+        right: unset;
+        margin: auto;
+
+
+
+    }
+
+}
+
+
+
+@media(max-width: 425px) {
+
+    .maindiv {
+        height: auto;
+        margin-bottom: 10%;
+    }
+
+    
+    .about-container {
+
+        padding: 15px;
+    }
+
+    .about-text h2 {
+        font-size: 1.5rem;
+
+    }
+
+    .about-text {
+        min-width: 100%;
+
+
+    }
+
+}

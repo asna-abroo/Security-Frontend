@@ -1,0 +1,49 @@
+.question-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: row-reverse;
+   
+  }
+  
+  .diagram-container {
+    width: 60%;
+    
+  }
+  .resultbtn {
+    width: 25% !important;
+  }
+  
+  .info-text {
+    width: 40%;
+    text-align: left;
+  }
+  
+  .info-text h2 {
+    color: #b1ff8f;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .info-text p {
+    color: #ffff;
+    font-size: 16px;
+  }
+  @media (max-width: 768px){
+ 
+    .resultbtn {
+      width: 70% !important;
+    }
+  }
+  
+  @media (max-width: 550px){
+    .question-page{
+      margin-bottom: 6% ;
+    }
+   
+  }
+  

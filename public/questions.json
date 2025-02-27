@@ -1,0 +1,118 @@
+{
+  "individual": {
+    "Security and Risk Management": [
+      "Have you undergone recent security awareness training?",
+      "Do you regularly check for updates and patches on your personal devices?",
+      "Do you use strong, unique passwords for each of your online accounts?",
+      "Are you enrolled in a multi-factor authentication (MFA) system for your critical accounts?",
+      "Do you regularly back up important personal data?"
+    ],
+    "Asset Security": [
+      "Do you maintain an up-to-date inventory of all hardware and software assets?",
+      "Are all sensitive assets labeled and classified according to their criticality?",
+      "Do you have controls in place to prevent unauthorized physical access to critical assets?",
+      "Is there a process for securely disposing of or repurposing retired assets?",
+      "Are assets monitored continuously for unauthorized access or suspicious activity?"
+    ],
+    "Security Architecture and Engineering": [
+      "Do you use encryption to protect sensitive files on your personal devices?",
+      "Are you aware of the security settings and configurations for your home network router?",
+      "Have you implemented network segmentation (such as guest networks) to separate devices with different security needs?",
+      "Do you regularly update the firmware on your home networking devices?",
+      "Are you familiar with and use secure communication protocols (e.g., HTTPS) when browsing the web?"
+    ],
+    "Communication and Network Security": [
+      "Do you use a virtual private network (VPN) when accessing public Wi-Fi networks?",
+      "Are you aware of and use secure communication tools (e.g., encrypted messaging apps) for sensitive conversations?",
+      "Do you regularly update your router’s password and use strong, unique passwords for your network?",
+      "Have you enabled WPA3 or equivalent encryption for your home Wi-Fi network?",
+      "Do you use firewalls or security software to monitor and protect your network traffic?"
+    ],
+    "Identity and Access Management (IAM)": [
+      "Do you use unique passwords for each of your online accounts?",
+      "Is multi-factor authentication (MFA) enabled for your most important accounts?",
+      "Have you updated your passwords regularly in the past year?",
+      "Do you review and manage your account permissions and access settings periodically?",
+      "Are you cautious about sharing your passwords or login credentials with others?"
+    ],
+    "Security Assessment and Testing": [
+      "Do you regularly run antivirus and anti-malware scans on your devices?",
+      "Have you performed a vulnerability scan on your home network in the past year?",
+      "Do you test your backups periodically to ensure they can be restored if needed?",
+      "Are you familiar with how to use online tools to check the security of your passwords?",
+      "Do you periodically review and update the security settings on your devices and applications?"
+    ],
+    "Security Operations": [
+      "Do you have antivirus and anti-malware software installed and updated on your devices?",
+      "Do you regularly review and update your security settings and permissions on personal accounts?",
+      "Have you set up alerts for unusual or unauthorized activity on your financial accounts?",
+      "Do you use a firewall to protect your home network from unauthorized access?",
+      "Are your operating systems and software updated with the latest security patches?"
+    ],
+    "Software Development Security": [
+      "Do you use strong, unique passwords for your development tools and accounts?",
+      "Have you enabled two-factor authentication (2FA) for your coding and project repositories?",
+      "Do you regularly update your development software and tools to the latest versions?",
+      "Is your code stored in a version control system like Git, and is it secured?",
+      "Do you scan your code for security vulnerabilities before deploying or sharing it?"
+    ]
+  },
+  "organization": {
+    "Security and Risk Management": [
+      "Do you have an incident response plan in place for data breaches?",
+      "Is multi-factor authentication (MFA) implemented for accessing critical systems?",
+      "Have all employees received security awareness training in the past year?",
+      "Is there a regular schedule for conducting security audits and vulnerability assessments?",
+      "Are backup copies of critical data stored in a secure, off-site location?"
+    ],
+    "Asset Security": [
+      "Do you maintain an up-to-date inventory of all hardware and software assets?",
+      "Are all sensitive assets labeled and classified according to their criticality?",
+      "Do you have controls in place to prevent unauthorized physical access to critical assets?",
+      "Is there a process for securely disposing of or repurposing retired assets?",
+      "Are assets monitored continuously for unauthorized access or suspicious activity?"
+    ],
+    "Security Architecture and Engineering": [
+      "Do you follow a formal framework for developing and implementing your security architecture?",
+      "Is your network segmented to isolate sensitive data and systems from less secure areas?",
+      "Are secure coding practices enforced for all software development projects?",
+      "Do you perform regular threat modeling and security design reviews for new systems?",
+      "Is there a documented baseline configuration for all systems and devices?"
+    ],
+    "Communication and Network Security": [
+      "Do you use firewalls to protect your network perimeter?",
+      "Is network traffic monitored for suspicious activity in real time?",
+      "Do you have policies in place to restrict the use of unauthorized devices on your network?",
+      "Are VPNs used to secure remote access to your network?",
+      "Is network segmentation implemented to separate sensitive data from general traffic?"
+    ],
+    "Identity and Access Management (IAM)": [
+      "Do you enforce the principle of least privilege for user access?",
+      "Is multi-factor authentication (MFA) required for accessing critical systems?",
+      "Do you have a formal process for onboarding and offboarding employees with respect to access rights?",
+      "Are user accounts reviewed regularly to ensure appropriate access levels?",
+      "Do you have a policy for the regular rotation of passwords?"
+    ],
+    "Security Assessment and Testing": [
+      "Do you conduct regular vulnerability scans on your network and systems?",
+      "Are penetration tests performed at least annually to identify security weaknesses?",
+      "Do you perform regular security audits to ensure compliance with policies and regulations?",
+      "Are automated tools used to continuously monitor and test for security vulnerabilities?",
+      "Do you have a documented process for remediation of identified security issues?"
+    ],
+    "Security Operations": [
+      "Do you have a Security Operations Center (SOC) that monitors security events 24/7?",
+      "Are security incidents documented and reviewed to improve response strategies?",
+      "Do you utilize a Security Information and Event Management (SIEM) system for threat detection and analysis?",
+      "Is there an established incident response team within your organization?",
+      "Do you conduct regular security awareness training for all employees?"
+    ],
+    "Software Development Security": [
+      "Do you follow a secure software development lifecycle (SDLC) process?",
+      "Are secure coding guidelines provided to developers?",
+      "Is static application security testing (SAST) performed on code before deployment?",
+      "Do you conduct dynamic application security testing (DAST) on running applications?",
+      "Are third-party libraries and dependencies regularly scanned for vulnerabilities?"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+@media (max-width: 1024px) {
+    .herotext {
+        font-size: 3.5rem;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .herotext {
+        font-size: 2.5rem;
+        font-weight: 650;
+
+    }
+}
+
+@media (max-width: 500px) {
+    .herotext {
+        font-size: 1.5rem;
+        font-weight: 650;
+
+    }
+}

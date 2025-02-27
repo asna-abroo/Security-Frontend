@@ -1,0 +1,64 @@
+/* General container for the logo and animations */
+
+
+/* Ensure the logo is on top */
+.logo {
+  position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  width: 23%;
+  /* Increased the size of the logo slightly */
+  padding-bottom: 6px;
+  /* Necessary for z-index to apply */
+  z-index: 20;
+  /* Set high z-index to bring logo image to the top */
+}
+
+.logo video {
+  width: 100%;
+}
+
+
+/* Responsive adjustments 
+
+@media (max-width: 2000px) {
+  .logo-container {
+   
+    margin-left: 22%;
+  }
+ 
+
+}
+@media (max-width: 1540px) {
+  .logo-container {
+  
+    margin-left: 19%;
+  }
+ 
+}
+
+
+@media (max-width: 1240px) {
+  .logo-container {
+  
+    margin-left: 0;
+  }
+ 
+}
+  */
+
+@media (max-width: 580px) {
+  .logo-container {
+    margin-right: -23%;
+   
+    
+  }
+
+  .logo {
+    width: 45%;
+    margin-right: 0;
+    padding-bottom: 3px;
+
+  }
+
+}

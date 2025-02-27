@@ -1,0 +1,134 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensures modal is on top */
+  overflow: hidden; /* Prevents body scrolling when modal is open */
+}
+
+.modal-qs {
+  background-color: #384740; /* Background color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 90%; /* Keeps the modal responsive on small screens */
+  max-width: 800px; /* Maximum width for larger screens */
+  max-height: 70vh; /* Restricts the height to ensure visibility */
+  overflow-y: auto; /* Enables vertical scrolling for content */
+  color: white; /* Text color */
+  position: relative;
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  color: #B1FF8F; /* Heading color */
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 10; /* Ensures button stays visible */
+}
+
+h2 {
+  color: #B1FF8F; /* Heading color */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+li {
+  margin-bottom: 15px; /* Space between questions */
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1); /* Slightly transparent white background */
+  border-radius: 5px;
+}
+
+.options {
+  display: flex;
+  justify-content: center; /* Center buttons */
+  margin-top: 10px;
+}
+
+.option-button {
+  background-color: #B1FF8F; /* Button color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #384740; /* Text color */
+  transition: background-color 0.3s;
+}
+
+.option-button:hover {
+  background-color: #A8DDA0; /* Slightly darker on hover */
+}
+
+.option-button.selected {
+  background-color: #4CAF50; /* Change color when selected */
+  color: white;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  margin-top: 20px;
+}
+
+.submit-button {
+  background-color: #B1FF8F; /* Same color as Yes/No buttons */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #384740; /* Same text color */
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #A8DDA0; /* Slightly darker on hover */
+}
+/* Submit button loading state */
+.submit-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%; /* Full width on small screens */
+    padding: 15px;
+  }
+
+  .close-button {
+    font-size: 1.2rem; /* Smaller close button */
+    top: 5px;
+    right: 10px;
+  }
+
+  h2 {
+    font-size: 1.2rem; /* Adjust heading size for smaller screens */
+  }
+
+  li {
+    font-size: 0.9rem; /* Adjust question text size */
+    padding: 8px;
+  }
+
+  .submit-button {
+    font-size: 0.9rem; /* Adjust submit button size */
+    padding: 8px 12px;
+  }
+}

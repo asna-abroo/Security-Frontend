@@ -1,0 +1,334 @@
+/* Service.css */
+.sdiv{
+  width: 100%;
+}
+.service-container {
+  margin: auto;
+  margin-top: 2%;
+    width: 50%; /* Default width */
+    background-color: #384740;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.service-image {
+  width: 100%; /* Image takes up full width of the container */
+  
+  
+}
+
+/* Stepper.css */
+/* Main Title Styling */
+.my-5{
+ margin-left: auto;
+ margin-right: auto;
+ 
+}
+
+.main-title {
+
+  font-size: 2.5rem; /* Larger font size */
+  font-weight: bold; /* Bold font */
+  color: #ecf2f0; /* Light greenish white from the NeuralAI text */
+}
+
+.text-success {
+  color: #B1FF8F !important; /* Light green for '4 Simple Steps' */
+}
+
+/* Stepper Layout */
+.stepper {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  position: relative;
+  margin: auto;
+}
+
+/* Step Circle Styling */
+.step-circle {
+   width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #b1ff8f;
+    color: #22332e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto;
+    border: 1px solid #b1ff8f;
+}
+
+/* Step Text Styling */
+.step {
+  flex-grow: 1;
+  max-width: 200px;
+  padding: 0 15px;
+}
+
+.step h5 {
+  font-weight: bold;
+  margin-top: 15px;
+  color: #fff; /* Light green for step titles */
+}
+
+.step p {
+  font-size: 14px;
+  color: #bec9c5; /* Light gray for step descriptions */
+}
+
+
+
+/* Responsive Design for Smaller Screens */
+@media (min-width: 663px) {
+  .service-container {
+   
+  }
+  
+}
+@media (max-width: 1200px) {
+  
+  .main-title {
+    font-size: 2rem; /* Adjust main title font size */
+  }
+
+  .step-circle {
+    width: 55px;
+    height: 55px;
+    font-size: 20px; /* Smaller step number */
+  }
+
+  .step h5 {
+    font-size: 1rem; /* Slightly smaller step titles */
+  }
+
+  .step p {
+    font-size: 13px; /* Slightly smaller step descriptions */
+  }
+
+  .stepper {
+    width: 90%; /* Increase width for medium screens */
+  }
+
+  .step {
+    max-width: 180px; /* Decrease step max width */
+  }
+}
+
+@media (max-width: 1024px){
+
+
+  .main-title {
+    font-size: 1.7rem; /* Main title smaller for tablet */
+  }
+
+  .step-circle {
+    width: 52px;
+    height: 52px;
+    font-size: 19px; /* Step circle smaller for tablet */
+  }
+
+  .step h5 {
+    font-size: 0.8rem; /* Smaller step titles for tablet */
+  }
+
+  .step p {
+    font-size: 12px; /* Smaller step descriptions for tablet */
+  }
+
+  .stepper {
+    width: 95%; /* Increase width for smaller screens */
+  }
+
+  .step {
+    max-width: 160px; /* Adjust step max width */
+  }
+
+  .step-arrow {
+    width: 60px;
+    height: 30px; /* Reduce arrow size */
+    margin-left: -30px; /* Adjust margin for arrow */
+  }
+
+}
+
+@media (max-width: 992px) {
+  .main-title {
+    font-size: 1.75rem; /* Main title smaller for tablet */
+  }
+
+  .step-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 18px; /* Step circle smaller for tablet */
+  }
+
+ 
+
+  .step p {
+    font-size: 12px; /* Smaller step descriptions for tablet */
+  }
+
+  .stepper {
+    width: 95%; /* Increase width for smaller screens */
+  }
+
+  .step {
+    max-width: 160px; /* Adjust step max width */
+  }
+
+  .step-arrow {
+    width: 60px;
+    height: 30px; /* Reduce arrow size */
+    margin-left: -30px; /* Adjust margin for arrow */
+  }
+}
+
+@media (max-width: 768px) {
+
+  .service-container {
+    width: 65%;
+  }
+  .main-title {
+    font-size: 1.5rem; /* Smaller font for mobile screens */
+  }
+
+  .step-circle {
+    width: 42px;
+    height: 42px;
+    font-size: 13px; /* Even smaller step circle */
+  }
+
+  .step h5 {
+    font-size: 0.7rem; /* Step titles even smaller */
+  }
+
+  .step p {
+    font-size: 9.5px; /* Step description smaller */
+  }
+
+  .stepper {
+    width: 90%; /* Increase width for smaller screens */
+  }
+
+  .step {
+    max-width: 160px; /* Adjust step max width */
+  }
+
+  .step-arrow {
+    width: 50px;
+    height: 25px; /* Reduce arrow size */
+  }
+}
+@media (max-width: 600px) {
+  .service-container {
+    width: 70%;
+  }
+  .main-title {
+    font-size: 1.5rem; /* Smaller font for mobile screens */
+  }
+
+  .step-circle {
+    width: 45px;
+    height: 45px;
+    font-size: 16px; /* Even smaller step circle */
+  }
+
+  .step h5 {
+    font-size: 1.1rem; /* Step titles even smaller */
+  }
+
+  .step p {
+    font-size: 11px; /* Step description smaller */
+  }
+
+  .step-arrow {
+    display: none; /* Hide arrows on mobile */
+  }
+
+  .stepper {
+    flex-direction: column; /* Stack steps vertically */
+    align-items: center; /* Center the steps */
+  }
+
+  .step {
+    max-width: none;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sdiv
+  {
+    width: 100%;
+  }
+
+  .main-title {
+    font-size: 1rem; /* Smallest font size for very small screens */
+  }
+
+  .step-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 14px; /* Smallest step circle */
+  }
+
+  .step h5 {
+    font-size: 1rem; /* Smallest step titles */
+  }
+
+  .step p {
+    font-size: 10px; /* Smallest step descriptions */
+  }
+
+  .step {
+    padding-bottom: 20px; /* Reduce padding for each step */
+  }
+}
+
+@media (max-width: 400px) {
+  .sdiv {
+    width: 100%; /* Ensure the div takes full width */
+  }
+
+  .main-title {
+    font-size: 1.2rem; /* Slightly larger font size for better readability */
+    text-align: center; /* Center align text for better appearance */
+    margin: 10px; /* Add margin to prevent touching edges */
+  }
+
+  .step-circle {
+    width: 35px; /* Slightly smaller circle */
+    height: 35px; /* Slightly smaller circle */
+    font-size: 12px; /* Smaller step number */
+  }
+
+  .step h5 {
+    font-size: 0.9rem; /* Adjust step titles for better readability */
+    margin: 5px 0; /* Reduce margin to prevent overlap */
+  }
+
+  .step p {
+    font-size: 9px; /* Adjust descriptions for smaller screens */
+    margin: 5px 0; /* Reduce margin to prevent overlap */
+  }
+
+  .step {
+    padding-bottom: 15px; /* Further reduce padding for each step */
+  }
+
+  .step-arrow {
+    width: 50px; /* Adjust arrow size */
+    height: 20px; /* Adjust arrow height */
+    margin-left: -25px; /* Adjust margin for better alignment */
+  }
+}

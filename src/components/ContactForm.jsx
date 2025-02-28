@@ -24,31 +24,31 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-
+  
     // Format the email message with user input
     const messageContent = `
-    First Name: ${formData.firstName}
-    Last Name: ${formData.lastName}
-    How they heard about us: ${formData.website}
-    Feedback: ${formData.message}
+      First Name: ${formData.firstName}
+      Last Name: ${formData.lastName}
+      How they heard about us: ${formData.website}
+      Feedback: ${formData.message}
     `;
-
+  
     const emailParams = {
       email: formData.email,
       firstName: formData.firstName,
       lastName: formData.lastName,
       messageContent: messageContent,
     };
-
+  
     try {
-      const response = await fetch("http://localhost:3000/api/send-email", {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/send-email`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(emailParams),
       });
-
+  
       if (response.ok) {
         alert("Email sent successfully!");
         setFormData({
@@ -67,7 +67,7 @@ const ContactForm = () => {
     } finally {
       setLoading(false);
     }
-  };
+  };  
 
   return (
     <div className="bg-[#384740]">

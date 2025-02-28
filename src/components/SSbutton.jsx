@@ -7,14 +7,14 @@ const SSbutton = ({ scores, totalPercentage }) => {
 
   const handleSendEmail = async () => {
     if (!email) {
-      alert('Please enter a valid email address.'); // Show alert for invalid email
+      alert('Please enter a valid email address.');
       return;
     }
 
     setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:3000/api/send-score-email', {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/send-score-email`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -27,15 +27,15 @@ const SSbutton = ({ scores, totalPercentage }) => {
       });
 
       if (response.ok) {
-        alert('Your score report has been sent successfully to your email!'); // Show success alert
+        alert('Your score report has been sent successfully to your email!');
         setEmail('');
         setShowModal(false);
       } else {
-        alert('Failed to send email. Please try again.'); // Show error alert
+        alert('Failed to send email. Please try again.');
       }
     } catch (error) {
       console.error('Error sending email:', error);
-      alert('Something went wrong. Please try again.'); // Show error alert
+      alert('Something went wrong. Please try again.');
     } finally {
       setLoading(false);
     }

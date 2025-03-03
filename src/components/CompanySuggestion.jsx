@@ -89,36 +89,45 @@ function CompanySuggestion() {
   }, []);
 
   return (
-    
-    <div ref={containerRef} className={`company-container ${isVisible ? 'visible' : ''}`}>
-      {/* Column Headings */}
-      <div className="column-headings">
-        <h3 className="company-heading">Company</h3>
-        <h3 className="reviews-heading">Reviews</h3>
-        <h3 className="services-heading">Services</h3>
+    <div>
+      <div >
+        <h1 className="securitySecHeading text-white">
+          <span className="text-[#B1FF8F]">Partnering For</span> Protection:
+        </h1>
+        <h1 className="mt-2 md:mt-10 text-white securitySecHeading">
+          Elevate Your Security with Industry Leaders
+        </h1>
       </div>
-
-      {companies.map((company, index) => (
-        <div className="company-row" key={index}>
-          {/* First Column: Company Name and Logo */}
-          <div className="company-info">
-           <a href={company.website} target="_blank" rel="noopener noreferrer" ><img src={company.logo} alt={company.name} className="company-logo" /></a>
-            <a href={company.website} target="_blank" rel="noopener noreferrer" className="company-link">
-              {company.name}
-            </a>
-          </div>
-
-          {/* Second Column: Trustpilot Button */}
-          <a href={company.trustpilotLink} target="_blank" rel="noopener noreferrer" className="trustpilot-button">
-            View on Trustpilot
-          </a>
-
-          {/* Third Column: Services Description */}
-          <div className="services-description">
-            <p>{company.services}</p>
-          </div>
+      <div ref={containerRef} className={`company-container ${isVisible ? 'visible' : ''}`}>
+        {/* Column Headings */}
+        <div className="column-headings">
+          <h3 className="company-heading">Company</h3>
+          <h3 className="reviews-heading">Reviews</h3>
+          <h3 className="services-heading">Services</h3>
         </div>
-      ))}
+
+        {companies.map((company, index) => (
+          <div className="company-row" key={index}>
+            {/* First Column: Company Name and Logo */}
+            <div className="company-info">
+            <a href={company.website} target="_blank" rel="noopener noreferrer" ><img src={company.logo} alt={company.name} className="company-logo" /></a>
+              <a href={company.website} target="_blank" rel="noopener noreferrer" className="company-link">
+                {company.name}
+              </a>
+            </div>
+
+            {/* Second Column: Trustpilot Button */}
+            <a href={company.trustpilotLink} target="_blank" rel="noopener noreferrer" className="trustpilot-button">
+              View on Trustpilot
+            </a>
+
+            {/* Third Column: Services Description */}
+            <div className="services-description">
+              <p>{company.services}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 

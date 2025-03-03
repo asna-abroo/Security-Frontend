@@ -14,12 +14,15 @@ const Services = () => {
                         Secure your future in <span className="text-success">4 Simple Steps</span>
                     </h2>
 
-                    <div className="stepper d-flex justify-content-between align-items-center ">
-                        {/* Step 1 */}
+                    <div class="stepper d-flex justify-content-between align-items-start">
+                                                {/* Step 1 */}
+                        
                         <div className="step text-center">
-                            <div className="step-circle">1</div>
-                            <h5>What User Type are you?</h5>
-                            <p>Either select an Organisation or an Individual.</p>
+                            <div className='h-64'>                           
+                                <div className="step-circle">1</div>
+                            </div>
+                                <h5>What User Type are you?</h5>
+                                <p>Either select an Organisation or an Individual.</p>
                         </div>
 
                         {/* Arrow */}
@@ -27,7 +30,9 @@ const Services = () => {
 
                         {/* Step 2 */}
                         <div className="step text-center">
-                            <div className="step-circle">2</div>
+                            <div className='h-64'>                           
+                                <div className="step-circle">2</div>
+                            </div>                            
                             <h5>Dive into answering Security Questions</h5>
                             <p>Based on 8 domains to determine your security level.</p>
                         </div>
@@ -41,7 +46,9 @@ const Services = () => {
 
                         {/* Step 3 */}
                         <div className="step text-center">
-                            <div className="step-circle">3</div>
+                            <div className='h-64'>                           
+                                <div className="step-circle">3</div>
+                            </div>                            
                             <h5>Security Score Report</h5>
                             <p>Download your report and assess areas of risk.</p>
                         </div>
@@ -55,7 +62,9 @@ const Services = () => {
 
                         {/* Step 4 */}
                         <div className="step text-center">
-                            <div className="step-circle">4</div>
+                            <div className='h-64'>                           
+                                <div className="step-circle">4</div>
+                            </div>                            
                             <h5>Recommendations</h5>
                             <p>Get tailored recommendations to improve security.</p>
                         </div>

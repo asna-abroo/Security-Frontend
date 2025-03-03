@@ -57,7 +57,7 @@ const SSbutton = ({ scores, totalPercentage }) => {
           marginBottom: '20px',
         }}
       >
-        Send Email to Yourself
+        Email Report
       </button>
 
       {showModal && (

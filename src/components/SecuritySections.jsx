@@ -152,9 +152,6 @@ const SecuritySections = ({ result }) => {
           </div>
         </div>
       )}
-      <h2 className="securitySecHeading text-white">
-          <span className="text-[#B1FF8F]">Partnering for Protection:</span> Elevate Your Security with Industry Leaders
-      </h2>
 <CompanySuggestion/>
     </div>
   );

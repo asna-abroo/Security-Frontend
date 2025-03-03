@@ -65,7 +65,7 @@ const NavLinks = () => {
         </li>
         <li className="text-center">
           <button
-            onClick={() => handleScrollToSection("services")}
+            onClick={() => handleScrollToSection("question-page")}
             className="hover:text-white text-white"
           >
             Level-Up

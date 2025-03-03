@@ -69,7 +69,9 @@ function AppContent({ choice, handleChoiceSelect }) {
                     />
                   </div>
                  
-                  <QuestionPage choice={choice} />
+                  <div id="question-page">
+                    <QuestionPage choice={choice} />
+                  </div>
                   <div id="about-page">
                     <AboutPage />
                   </div>

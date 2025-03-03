@@ -42,7 +42,7 @@ const QuestionPage = ({ choice }) => {
   };
 
   return (
-    <div>
+    <div id="question-page">
       <div className="question-page ">
         <div className="diagram-container">
           <CircularMenu

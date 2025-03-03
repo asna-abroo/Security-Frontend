@@ -42,7 +42,7 @@ const RecommendationModal = ({ scores, totalPercentage, onClose }) => {
 
   return (
     <div className="modal-overlay">
-      <div className="modal-content recommendation-modal" style={{background:'#606d67'}}>
+      <div className="modal-content recommendation-modal">
         <button className="AIclose-button" onClick={onClose}>X</button>
         <h2>AI Security Recommendations</h2>
         
@@ -51,7 +51,26 @@ const RecommendationModal = ({ scores, totalPercentage, onClose }) => {
         
         {recommendations && (
           <div className="recommendations-content">
-            <pre>{recommendations}</pre>
+            <div className="recommendation-section">
+              <h3>Analysis</h3>
+              <p>{recommendations.split('\n')[0].trim()}</p>
+            </div>
+            <div className="recommendation-section">
+              <h3>Top Recommendations</h3>
+              <ul>
+                {recommendations.split('\n').slice(1, 4).map((rec, index) => (
+                  <li key={index}>{rec.trim()}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="recommendation-section">
+              <h3>Resources</h3>
+              <ul>
+                {recommendations.split('\n').slice(4).map((resource, index) => (
+                  <li key={index}>{resource.trim()}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         )}
       </div>
@@ -59,4 +78,4 @@ const RecommendationModal = ({ scores, totalPercentage, onClose }) => {
   );
 };
 
-export default RecommendationModal; 
+export default RecommendationModal;

@@ -83,7 +83,7 @@ const SSbutton = ({ scores, totalPercentage }) => {
               textAlign: 'center',
             }}
           >
-            <h3>Enter Your Email</h3>
+            <h3>Email Report</h3>
             <input
               type="email"
               placeholder="Your email address"

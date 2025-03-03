@@ -89,6 +89,7 @@ function CompanySuggestion() {
   }, []);
 
   return (
+    
     <div ref={containerRef} className={`company-container ${isVisible ? 'visible' : ''}`}>
       {/* Column Headings */}
       <div className="column-headings">

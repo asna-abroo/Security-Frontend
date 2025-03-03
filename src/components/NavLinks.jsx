@@ -68,7 +68,7 @@ const NavLinks = () => {
             onClick={() => handleScrollToSection("services")}
             className="hover:text-white text-white"
           >
-            Services
+            Level-Up
           </button>
         </li>
         <li className="text-center">
@@ -84,23 +84,7 @@ const NavLinks = () => {
             onClick={() => handleScrollToSection("contact-form")}
             className="hover:text-white text-white"
           >
-            Get Your Security Score Report
-          </button>
-        </li>
-        <li className="text-center">
-          <button
-            onClick={() => handleScrollToSection("security-score-page")}
-            className="hover:text-white text-white"
-          >
-            Security Score
-          </button>
-        </li>
-        <li className="text-center">
-          <button
-            onClick={() => handleScrollToSection("organisation-individual-choice")}
-            className="hover:text-white text-[#B1FF8F] font-bold"
-          >
-            Categories
+            Contact Us
           </button>
         </li>
       </ul>

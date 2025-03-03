@@ -77,7 +77,7 @@ const QuestionPage = ({ choice }) => {
         onMouseEnter={() => !areDomainsFilled() && setShowTooltip(true)}  // Show tooltip only when button is disabled
         onMouseLeave={() => setShowTooltip(false)} // Hide tooltip when hover ends
       >
-        See Your Result
+        Boost Security
       </div>
 
       {showTooltip && !areDomainsFilled() && (

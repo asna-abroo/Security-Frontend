@@ -53,7 +53,7 @@ const SecuritySections = ({ result }) => {
       <SecurityScorePage choice={result} />
       
       <div >
-        <h1 className="securitySecHeading text-white">
+        <h1 className="securitySecHeading text-white" >
           <span className="text-[#B1FF8F]">Security Risk</span> Overview:
         </h1>
         <h1 className="mt-2 md:mt-10 text-white securitySecHeading">

@@ -50,16 +50,16 @@ const RecommendationModal = ({ scores, totalPercentage, onClose }) => {
         {error && <div className="AIerror">{error}</div>}
         
         {recommendations && (
-          <div className="recommendations-content">
-            <div className="recommendation-section">
+          <div className="recommendations-content" style={{ fontFamily: 'Questiora' }}>
+            <div className="recommendation-section" >
               <h3>Analysis</h3>
-              <p>{recommendations.split('\n')[0].trim()}</p>
+              <p style={{ fontFamily: 'Questiora' }}  >{recommendations.split('\n')[0].trim()}</p>
             </div>
             <div className="recommendation-section">
               <h3>Top Recommendations</h3>
               <ul>
                 {recommendations.split('\n').slice(1, 4).map((rec, index) => (
-                  <li key={index}>{rec.trim()}</li>
+                  <li style={{ fontFamily: 'Questiora' }} key={index}>{rec.trim()}</li>
                 ))}
               </ul>
             </div>
@@ -67,7 +67,7 @@ const RecommendationModal = ({ scores, totalPercentage, onClose }) => {
               <h3>Resources</h3>
               <ul>
                 {recommendations.split('\n').slice(4).map((resource, index) => (
-                  <li key={index}>{resource.trim()}</li>
+                  <li style={{ fontFamily: 'Questiora' }}  key={index}>{resource.trim()}</li>
                 ))}
               </ul>
             </div>

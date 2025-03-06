@@ -15,26 +15,30 @@
 /* Modal Content */
 .modal-content {
   background: #000; /* Black background */
-  color: #00FF00; /* Green text color */
+  color: #09ff09e0;; /* Green text color */
   padding: 20px;
   border-radius: 10px;
   width: 80%;
   max-width: 600px;
   max-height: 80vh;
   overflow-y: auto;
-  font-family: 'IBM Plex Mono', 'Courier New', monospace; /* More accurate terminal font */
+  font-family: 'Questiora'; /* More accurate terminal font */
   font-size: 1.2rem; /* Slightly larger font */
-  border: 2px solid #00FF00; /* Thicker green border */
-  text-shadow: 0 0 5px #00FF00; /* Glowing effect */
+  border: 2px solid #09ff09e0;; /* Thicker green border */
+ 
+
 }
 
 /* Modal Heading */
 .recommendation-modal h2 {
-  color: #00FF00; /* Green text for headings */
+  color: #09ff09e0;; /* Green text for headings */
   text-align: center;
   margin-bottom: 20px;
   font-size: 1.8rem; /* Slightly larger */
-  text-shadow: 0 0 8px #00FF00; /* Extra glow */
+  text-shadow: 0 0 6px #09ff09e0;
+  font-family: 'Questiora';
+  letter-spacing: 3px;
+    /* Extra glow */
 }
 
 /* Recommendations Content */
@@ -42,36 +46,43 @@
   text-align: left;
   white-space: pre-wrap;
   line-height: 1.6;
+  font-family: 'Questiora';
 }
 
 /* Recommendation Sections */
 .recommendation-section {
   margin-bottom: 20px;
+  font-family: 'Questiora';
 }
 
 .recommendation-section h3 {
-  color: #00FF00; /* Green text for section headings */
+  color: #09ff09e0;; /* Green text for section headings */
   margin-bottom: 10px;
   font-size: 1.5rem;
-  text-shadow: 0 0 6px #00FF00;
+  text-shadow: 0 0 6px #09ff09e0;
+  font-family: 'Questiora';
+  letter-spacing: 5px
 }
 
 .recommendation-section p,
 .recommendation-section ul {
-  color: #00FF00; /* Green text for content */
+  color: #09ff09e0;; /* Green text for content */
   margin: 0;
   padding: 0;
   font-size: 1.2rem; /* Slightly bigger */
-  text-shadow: 0 0 4px #00FF00;
+  text-shadow: 0 0 3px #09ff09e0;
+  font-family: 'Questiora';
+  letter-spacing: 3px
 }
 
 /* Loading Message */
 .AIloading {
   text-align: center;
   padding: 20px;
-  color: #00FF00; /* Green text for loading message */
+  color: #09ff09e0;; /* Green text for loading message */
   font-size: 1.2rem;
-  text-shadow: 0 0 5px #00FF00;
+  text-shadow: 0 0 6px #09ff09e0;
+  font-family: 'Questiora';
 }
 
 /* Close Button */
@@ -80,17 +91,17 @@
   top: 10px;
   right: 10px;
   background: #000;
-  color: #00FF00;
-  border: 2px solid #00FF00;
+  color: #09ff09e0;;
+  border: 2px solid #09ff09e0;;
   padding: 5px 10px;
   cursor: pointer;
   font-family: 'IBM Plex Mono', 'Courier New', monospace;
   font-size: 1.2rem;
-  text-shadow: 0 0 5px #00FF00;
+  
 }
 
 .AIclose-button:hover {
-  background: #00FF00;
+  background: #09ff09e0;;
   color: #000;
 }
 
@@ -104,7 +115,7 @@
 }
 
 .modal-content::-webkit-scrollbar-thumb {
-  background: #00FF00;
+  background: #09ff09e0;;
   border-radius: 4px;
 }
 

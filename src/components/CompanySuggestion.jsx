@@ -92,9 +92,9 @@ function CompanySuggestion() {
     <div>
       <div >
         <h1 className="securitySecHeading text-white">
-          <span className="text-[#B1FF8F]">Partnering For</span> Protection:
+          <span className="text-[#B1FF8F]">Partnering For</span> Protection
         </h1>
-        <h1 className="mt-2 md:mt-10 text-white securitySecHeading">
+        <h1 className="suggestionHeading mt-2 md:mt-10 text-white ">
           Elevate Your Security with Industry Leaders
         </h1>
       </div>
